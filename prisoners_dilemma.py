@@ -201,7 +201,7 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
     #
     elif player == 4:
         if getting_team_name:
-            return 'betray every 3rd round'
+            return 'dont betray'
         else:
             # use history, opponent_history, score, opponent_score
             # to compute your strategy
@@ -209,7 +209,7 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
             if(size%3==0): #the number of rounds played is a multiple of 3
                 return 'c'
             else:
-                return 'b'
+                return 'c'
     
     
     
